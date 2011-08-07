@@ -1,5 +1,8 @@
 ﻿Imports System.Runtime.InteropServices
 
+'Commented by Nino Francisco Calzada Alamo
+
+
 Friend Class InpOut64
     <DllImport("InpOutx64.dll")> Friend Shared Sub Out32(ByVal PortAddress As Short,
                                                         ByVal Data As Short)
