@@ -44,7 +44,7 @@
         If IntPtr.Size = 4 Then
             InpOut32.DlPortWritePortUchar(Port, Data)
         Else
-
+            InpOut64.DlPortWritePortUchar(Port, Data)
         End If
     End Sub
 
@@ -58,9 +58,9 @@
 
     Public Sub DlPortWritePortUshort(ByVal Port As UShort, ByVal Data As UShort)
         If IntPtr.Size = 4 Then
-
+            InpOut32.DlPortWritePortUshort(Port, Data)
         Else
-
+            InpOut64.DlPortWritePortUshort(Port, Data)
         End If
     End Sub
 
